@@ -1,0 +1,17 @@
+{
+  "defaultSeverity": "error",
+  "rulesDirectory": ["tslint-plugin-prettier"],
+  "extends": ["tslint-config-standard", "tslint-config-prettier"],
+  "jsRules": {},
+  "rules": {
+    "no-floating-promises": false
+  },
+  "prettier": [
+    true,
+    {
+      "singleQuote": true,
+      "semi": true,
+      "printWidth": 80
+    }
+  ]
+}
