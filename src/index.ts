@@ -12,7 +12,7 @@ type OGPData = {
   description?: string;
 };
 
-export const ogpGetter = async (url: string) => {
+export const getOGP = async (url: string) => {
   const resp = await axios.get(url);
   const body = resp.data;
   const parsedDoc: HTMLElement = parse(body) as HTMLElement;

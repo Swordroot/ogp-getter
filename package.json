@@ -1,6 +1,6 @@
 {
   "name": "ogp-getter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "get ogp info",
   "main": "dist/index.js",
   "scripts": {
@@ -23,6 +23,7 @@
   "devDependencies": {
     "@types/jest": "^24.0.25",
     "jest": "^24.9.0",
+    "ts-jest": "^24.2.0",
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",
     "tslint-config-standard": "^9.0.0",
@@ -32,5 +33,26 @@
   "dependencies": {
     "axios": "^0.19.0",
     "node-html-parser": "^1.1.16"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "."
+    ],
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    },
+    "testMatch": [
+      "**/__tests__/**/*.test.ts"
+    ]
   }
 }
